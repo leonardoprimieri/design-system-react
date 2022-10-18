@@ -109,6 +109,7 @@ var Button = styled("button", {
   padding: "$2 $4",
   border: 0,
   fontWeight: "$bold",
+  color: "$white",
   variants: {
     size: {
       small: {
