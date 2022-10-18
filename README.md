@@ -1,1 +1,1 @@
-# design-system-react
+# Design System criado com monorepo para ReactJS
