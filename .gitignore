@@ -1,1 +1,6 @@
 node_modules
+.storybook
+packages/*/node_modules
+packages/*/dist
+packages/docs/.storybook
+packages/docs/storybook-static
