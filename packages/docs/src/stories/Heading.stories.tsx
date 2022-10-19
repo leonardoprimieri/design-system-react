@@ -17,4 +17,12 @@ export const CustomHeading: StoryObj<HeadingProps> = {
     children: 'H1 Heading',
     as: 'h1',
   },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'By default, heading always will be `h2` element. But we can change it by using `as` prop.',
+      },
+    },
+  },
 }
