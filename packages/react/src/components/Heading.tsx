@@ -1,6 +1,6 @@
 import { ComponentProps } from '@stitches/react'
-import { ElementType } from 'react'
 import { styled } from '../styles'
+import { ComponentTypeExtension } from '../types/ComponentTypeExtension'
 
 export const Heading = styled('h2', {
   fontFamily: '$default',
@@ -25,6 +25,5 @@ export const Heading = styled('h2', {
   },
 })
 
-export type HeadingProps = ComponentProps<typeof Heading> & {
-  as?: ElementType
-}
+export type HeadingProps = ComponentProps<typeof Heading> &
+  ComponentTypeExtension

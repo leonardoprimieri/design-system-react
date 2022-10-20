@@ -1,6 +1,6 @@
 import { ComponentProps } from '@stitches/react'
-import { ElementType } from 'react'
 import { styled } from '../styles'
+import { ComponentTypeExtension } from '../types/ComponentTypeExtension'
 
 export const Text = styled('p', {
   fontFamily: '$default',
@@ -30,6 +30,4 @@ export const Text = styled('p', {
   },
 })
 
-export type TextProps = ComponentProps<typeof Text> & {
-  as?: ElementType
-}
+export type TextProps = ComponentProps<typeof Text> & ComponentTypeExtension
