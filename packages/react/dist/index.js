@@ -30,7 +30,8 @@ __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
   Heading: () => Heading,
-  Text: () => Text
+  Text: () => Text,
+  TextInput: () => TextInput
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -313,11 +314,83 @@ function Avatar2(props) {
     ]
   });
 }
+
+// src/components/TextInput/styles.ts
+var TextInputContainer = styled("div", {
+  backgroundColor: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  display: "flex",
+  alignItems: "baseline",
+  "&:has(input:focus)": {
+    borderColor: "$ignite300"
+  },
+  "&:has(input:disabled)": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  }
+});
+var Prefix = styled("span", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$gray400",
+  fontWeight: "$regular"
+});
+var Input = styled("input", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  background: "transparent",
+  border: 0,
+  width: "100%",
+  "&:focus": {
+    outline: "none"
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  "&::placeholder": {
+    color: "$gray400"
+  }
+});
+var Label = styled("label", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$gray400",
+  fontWeight: "$regular",
+  marginBottom: "$1",
+  display: "block"
+});
+
+// src/components/TextInput/index.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function TextInput({ prefix: prefix2, label, ...props }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(import_jsx_runtime2.Fragment, {
+    children: [
+      !!label && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Label, {
+        children: label
+      }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, {
+        children: [
+          !!prefix2 && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, {
+            children: prefix2
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, {
+            ...props
+          })
+        ]
+      })
+    ]
+  });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
   Heading,
-  Text
+  Text,
+  TextInput
 });
