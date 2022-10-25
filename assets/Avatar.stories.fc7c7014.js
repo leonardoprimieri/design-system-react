@@ -1,0 +1,2 @@
+import{A as t}from"./index.243d3907.js";import"./index.1ce6fa57.js";import"./iframe.58d49b2c.js";import"./index.da2b90f2.js";import"./jsx-runtime.020225a3.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/leonardoprimieri.png",alt:"Avatar"},argTypes:{src:{control:{type:"text"}}}},c={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{c as Primary,e as WithFallback,m as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.fc7c7014.js.map

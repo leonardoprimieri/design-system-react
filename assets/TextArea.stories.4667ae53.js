@@ -1,0 +1,2 @@
+import{b as r}from"./index.243d3907.js";import"./index.1ce6fa57.js";import"./iframe.58d49b2c.js";import"./index.da2b90f2.js";import"./jsx-runtime.020225a3.js";const i={title:"Form/TextArea",component:r,args:{}},m={args:{placeholder:"Add any observations"}},d={args:{disabled:!0}},n=["Primary","Disabled"];export{d as Disabled,m as Primary,n as __namedExportsOrder,i as default};
+//# sourceMappingURL=TextArea.stories.4667ae53.js.map
